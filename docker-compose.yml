@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: medical_warehouse_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: newpass123    # New password
+      POSTGRES_DB: medical_warehouse
+    ports:
+      - "5455:5432"                    # New unique port (5455)
+    volumes:
+      - postgres_data_v3:/var/lib/postgresql/data  # New volume (v3)
+volumes:
+  postgres_data_v3:

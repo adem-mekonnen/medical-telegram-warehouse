@@ -1,0 +1,25 @@
+# Security (NEVER upload this)
+.env
+
+# Python System Files
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+
+# Telegram Session
+*.session
+
+# Large Data (Do not upload thousands of images to GitHub)
+data/raw/images/*
+data/raw/telegram_messages/*
+logs/
+
+# dbt artifacts
+medical_warehouse/target/
+medical_warehouse/dbt_packages/
+medical_warehouse/logs/
+
+# IDE settings
+.vscode/
+.idea/
