@@ -1,9 +1,6 @@
-```markdown
 # Medical Data Warehouse (End-to-End Data Pipeline)
 
 **A robust data engineering pipeline** that extracts data from Ethiopian medical Telegram channels, validates and stores it in a PostgreSQL Data Warehouse, enriches it using Computer Vision (YOLOv8), exposes insights via a REST API, and orchestrates the entire workflow using Dagster.
-
----
 
 ## 📂 Project Structure
 
