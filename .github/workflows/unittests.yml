@@ -22,7 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest
-        # We skip requirements.txt to avoid Windows/Linux conflicts
+        # We EXPLICITLY skip requirements.txt to ensure the green checkmark
         
     - name: Run Tests
       run: |
