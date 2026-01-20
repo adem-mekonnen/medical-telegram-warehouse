@@ -7,6 +7,7 @@ renamed as (
         channel_name,
         CAST(message_date AS TIMESTAMP) as message_date,
         message_text,
+        length(message_text) as message_length, -- Added Requirement
         views,
         has_media,
         image_path

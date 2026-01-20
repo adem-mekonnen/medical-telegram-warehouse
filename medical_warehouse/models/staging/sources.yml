@@ -1,7 +1,9 @@
 version: 2
+
 sources:
   - name: raw_data
     database: medical_warehouse
     schema: raw
     tables:
       - name: telegram_messages
+      - name: yolo_detections   # <--- ADD THIS LINE
